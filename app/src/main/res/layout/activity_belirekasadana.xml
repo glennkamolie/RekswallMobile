@@ -1,0 +1,56 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".belirekasadana">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="5dp"
+        android:text="@string/welcome" />
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="5dp"
+        android:textSize="18sp"
+        android:text="Harga Reksa Dana Indeks Batavia IDX30 ETF :" />
+
+    <EditText
+        android:id="@+id/etReksadanaValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Reksadana Value"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        android:enabled="false"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/etAmounts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Buy Amount"
+        android:minHeight="48dp" />
+
+    <Button
+        android:id="@+id/btnBuy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Buy" />
+
+    <Button
+        android:id="@+id/back1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:text="@string/back" />
+
+</LinearLayout>
